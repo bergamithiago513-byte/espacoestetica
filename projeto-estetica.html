@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espaço Estética</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Montserrat', sans-serif; }
+    body { background:#fff8f5; color:#333; line-height:1.6; overflow-x:hidden; }
+    header { background:#ff6f61; color:#fff; padding:30px 20px; text-align:center; font-family:'Pacifico', cursive; font-size:2.5rem; }
+    header span { display:block; font-size:1.2rem; font-family:'Montserrat', sans-serif; font-weight:600; margin-top:5px; }
+    nav { display:flex; justify-content:center; background:#ff8a75; flex-wrap:wrap; }
+    nav a { color:#fff; text-decoration:none; margin:0 15px; padding:15px 0; font-weight:600; transition:color 0.3s; }
+    nav a:hover { color:#ffd6cc; }
+    section { padding:50px 20px; max-width:1000px; margin:0 auto; }
+    h2 { color:#ff6f61; margin-bottom:20px; text-align:center; font-family:'Pacifico', cursive; }
+    h3 { margin-bottom:20px; }
+    .services-category { margin-bottom:50px; }
+    .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .service-card { background:#fff0ef; padding:20px; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,0.1); text-align:center; transition:transform 0.3s; }
+    .service-card:hover { transform:translateY(-5px); }
+    .contact-info { display:flex; justify-content:center; gap:50px; margin-top:15px; flex-wrap:wrap; }
+    .contact-card { background:#fff0ef; padding:20px; border-radius:15px; text-align:center; min-width:180px; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:transform 0.3s; }
+    .contact-card:hover { transform:translateY(-5px); }
+    .contact-card p { font-size:1.2rem; margin-bottom:10px; font-weight:600; }
+    .contact-card a { display:inline-block; background:#ff6f61; color:#fff; padding:10px 15px; border-radius:8px; text-decoration:none; font-weight:bold; transition:background 0.3s; }
+    .contact-card a:hover { background:#ff8a75; }
+    footer { background:#ff6f61; color:#fff; text-align:center; padding:30px 20px; font-size:0.9rem; }
+
+    /* Promoção Outono */
+    #promocao { padding:50px 20px; text-align:center; border-radius:15px; margin-bottom:50px; background: linear-gradient(135deg, #FFD8A6, #FFB38F); position:relative; overflow:hidden; }
+    #promocao h2 { color:#b33e00; font-family:'Pacifico', cursive; margin-bottom:10px; }
+    #promocao p { font-size:1.2rem; margin-bottom:30px; color:#7a2f00; }
+    #promocao .promo-card { background:#fff4f0; max-width:300px; margin:0 auto 20px; padding:20px; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    #promocao .promo-card:hover { transform:translateY(-5px); }
+    #promocao .promo-card a { display:inline-block; background:#b33e00; color:#fff; padding:10px 15px; border-radius:8px; text-decoration:none; font-weight:bold; transition:background 0.3s; margin-top:10px; }
+    #promocao .promo-card a:hover { background:#ff4d4d; }
+
+    /* Animação folhas */
+    .leaf { position:absolute; font-size: 1.5rem; animation: fall 6s linear infinite; }
+    @keyframes fall {
+      0% { transform: translateY(-50px) rotate(0deg); opacity:1; }
+      100% { transform: translateY(500px) rotate(360deg); opacity:0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Espaço Estética
+  <span>por Silvia Bergami</span>
+</header>
+
+<nav>
+  <a href="#servicos">Serviços</a>
+  <a href="#contato">Contato</a>
+  <a href="#localizacao">Localização</a>
+</nav>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+
+  <!-- Promoção de Outono -->
+  <section id="promocao">
+    <h2>Outono 🍂 É a estação de cuidar da sua pele!</h2>
+    <p>Promoção válida até <strong>30 de abril</strong></p>
+
+    <div class="promo-card">
+      <h3>Limpeza de Pele</h3>
+      <p>Tratamento facial completo por tempo limitado.</p>
+      <a href="https://wa.me/5527992821399" target="_blank">Agendar Agora</a>
+    </div>
+    <div class="promo-card">
+      <h3>Combo Facial</h3>
+      <p>Limpeza de Pele + Microagulhamento + Peeling Químico</p>
+      <a href="https://wa.me/5527992821399" target="_blank">Agendar Agora</a>
+    </div>
+
+    <!-- Folhas caindo -->
+    <div class="leaf" style="left:10%;">🍂</div>
+    <div class="leaf" style="left:30%; animation-delay:2s;">🍁</div>
+    <div class="leaf" style="left:50%; animation-delay:4s;">🍂</div>
+    <div class="leaf" style="left:70%; animation-delay:1s;">🍁</div>
+    <div class="leaf" style="left:90%; animation-delay:3s;">🍂</div>
+  </section>
+
+  <!-- Faciais -->
+  <div class="services-category">
+    <h3 style="text-align:center; font-family:'Pacifico',cursive; color:#ff6f61;">Faciais</h3>
+    <div class="services">
+      <div class="service-card">Limpeza de Pele Facial</div>
+      <div class="service-card">Peeling de Diamante</div>
+      <div class="service-card">Pós-operatório Facial</div>
+      <div class="service-card">Microagulhamento</div>
+      <div class="service-card">Rejuvenescimento Facial</div>
+      <div class="service-card">Hidratação Facial</div>
+      <div class="service-card">Tratamento para Pele Acneica</div>
+    </div>
+  </div>
+
+  <!-- Corporais -->
+  <div class="services-category">
+    <h3 style="text-align:center; font-family:'Pacifico',cursive; color:#ff6f61;">Corporais</h3>
+    <div class="services">
+      <div class="service-card">Drenagem Linfática</div>
+      <div class="service-card">Manta Térmica com Detox</div>
+      <div class="service-card">Massagem Modeladora</div>
+      <div class="service-card">Massagem Relaxante</div>
+      <div class="service-card">Pré e Pós Operatório</div>
+      <div class="service-card">Pump Up (Glúteos)</div>
+      <div class="service-card">Criolipólise de Placas</div>
+      <div class="service-card">Tratamento de Celulite</div>
+      <div class="service-card">Tratamento de Flacidez</div>
+      <div class="service-card">Drenagem Linfática em Gestantes</div>
+      <div class="service-card">Depilação com Cera</div>
+      <div class="service-card">Plástica dos Pés</div>
+    </div>
+  </div>
+
+</section>
+
+<section id="localizacao">
+  <h2>Localização</h2>
+  <p style="text-align:center;">
+    Rua Italiana Pereira Motta, 440, Sala 203 – Shopping Plazza<br>
+    Jardim Camburi, Espírito Santo
+  </p>
+  <iframe src="https://www.google.com/maps?q=Rua+Italiana+Pereira+Motta,+440,+Sala+203,+Shopping+Plazza,+Jardim+Camburi,+Espírito+Santo&output=embed" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <div class="contact-info">
+    <div class="contact-card">
+      <p>WhatsApp</p>
+      <a href="https://wa.me/5527992821399" target="_blank">Falar no WhatsApp</a>
+    </div>
+    <div class="contact-card">
+      <p>Instagram</p>
+      <a href="https://www.instagram.com/silviabergami_estetica" target="_blank">Abrir Instagram</a>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; 2026 Espaço Estética - Todos os direitos reservados</footer>
+
+</body>
+</html>
